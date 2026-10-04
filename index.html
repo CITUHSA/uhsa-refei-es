@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f5c4d">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Marcação de Refeições</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f5c4d'/%3E%3Cpath d='M10 7v8a3 3 0 0 0 3 3v7M13 7v6M16 7v8a3 3 0 0 1-3 3M22 25V7c-2 1-3 4-3 8h3' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-in">
+      <div class="logo" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 3v7a3 3 0 0 0 3 3v8M9 3v6M12 3v7a3 3 0 0 1-3 3M18 21V3c-2 1-3 4-3 8h3"/></svg>
+      </div>
+      <div class="title" id="appTitle">Marcação de Refeições</div>
+      <select class="lang" id="langSel" aria-label="Idioma / Language"></select>
+    </div>
+  </header>
+  <main id="view"><div class="spinner"></div></main>
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-box" id="modalBox"></div></div>
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
